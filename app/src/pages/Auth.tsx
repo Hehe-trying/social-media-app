@@ -16,7 +16,7 @@ export default function Auth() {
     const { error } = await supabase.auth.signInWithPassword({ email, password })
     if (error) return alert(error.message)
   } else {
-    const { data, error } = await supabase.auth.signUp({ email, password })
+    const { error } = await supabase.auth.signUp({ email, password })
 
     if (error) {
       if (error.message.toLowerCase().includes('already registered')) {

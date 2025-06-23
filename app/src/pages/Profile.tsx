@@ -16,7 +16,7 @@ export default function Profile() {
         return
       }
 
-      const { data, error } = await supabase
+      const { data } = await supabase
         .from('profiles')
         .select('name, bio')
         .eq('id', user.id)

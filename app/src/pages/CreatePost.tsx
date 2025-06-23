@@ -22,7 +22,7 @@ export default function CreatePost() {
     if (imageFile) {
       const fileExt = imageFile.name.split('.').pop()
       const fileName = `${Date.now()}-${user.id}.${fileExt}`
-      const { data, error } = await supabase.storage
+      const { error } = await supabase.storage
         .from('post-images')
         .upload(fileName, imageFile, {
           cacheControl: '3600',
