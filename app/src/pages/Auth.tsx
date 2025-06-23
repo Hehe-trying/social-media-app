@@ -1,8 +1,9 @@
 // src/pages/Auth.tsx
 import { useState } from 'react'
 import { supabase } from '../lib/supabaseClient'
-
+import { useNavigate } from 'react-router-dom'
 export default function Auth() {
+  const navigate = useNavigate()
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [isLogin, setIsLogin] = useState(true)
@@ -27,6 +28,7 @@ export default function Auth() {
 
     alert('Signup successful! Please check your email for confirmation.')
   }
+  navigate('/feed') // Redirect to dashboard after login/signup
 }
 
 
