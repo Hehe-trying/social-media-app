@@ -36,10 +36,6 @@ export default function Feed() {
   fetchPosts()
 }, [])
 
-  const handleLogout = async () => {
-    await supabase.auth.signOut()
-    navigate('/auth')
-  }
 
 const handleLike = async (postId: string, currentCount: number) => {
   const { error } = await supabase
@@ -67,9 +63,6 @@ const handleLike = async (postId: string, currentCount: number) => {
         <div className="space-x-2">
           <button onClick={() => navigate('/create-post')} className="bg-green-500 text-white px-4 py-1 rounded">
             + New Post
-          </button>
-          <button onClick={handleLogout} className="bg-red-500 text-white px-4 py-1 rounded">
-            Logout
           </button>
         </div>
       </div>

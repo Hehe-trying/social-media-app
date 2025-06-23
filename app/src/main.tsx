@@ -15,9 +15,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={
-          <AppLayout>
-          <App />
-          </AppLayout>
+          <Auth/>
           } />
         <Route path="/auth" element={<Auth />} />
         <Route

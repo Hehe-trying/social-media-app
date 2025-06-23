@@ -26,9 +26,11 @@ export default function Auth() {
       return
     }
 
+    
+
     alert('Signup successful! Please check your email for confirmation.')
   }
-  navigate('/feed') // Redirect to dashboard after login/signup
+  navigate('/profile')
 }
 
 
@@ -52,7 +54,7 @@ export default function Auth() {
           onChange={(e) => setPassword(e.target.value)}
           required
         />
-        <button>
+        <button className='w-full bg-blue-600 text-white p-2 rounded hover:bg-blue-700 transition-colors' type="submit">
           {isLogin ? 'Login' : 'Sign Up'}
         </button>
         <p className="text-sm text-center">

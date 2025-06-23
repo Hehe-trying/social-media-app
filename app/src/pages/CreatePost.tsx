@@ -63,11 +63,11 @@ export default function CreatePost() {
           onChange={(e) => setContent(e.target.value)}
           required
         />
-        <input
+        <input 
           type="file"
           accept="image/*"
           onChange={(e) => setImageFile(e.target.files?.[0] || null)}
-          className="block w-full"
+          className="block w-full bg-green-500 text-white p-2 rounded mb-4 cursor-pointer hover:bg-green-600 transition-colors"
         />
         <button className="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600">
           Post

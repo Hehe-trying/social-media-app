@@ -45,7 +45,10 @@ export default function Profile() {
     })
 
     if (error) alert(error.message)
-    else alert('Profile saved!')
+    else {
+      alert('Profile saved!')
+      navigate('/feed')
+    }
   }
 
   if (loading) return <p className="p-4">Loading...</p>
