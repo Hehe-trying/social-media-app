@@ -29,8 +29,6 @@ export default function Auth() {
 
     alert('Signup successful! Please check your email for confirmation.')
   }
-
-  navigate('/feed')
 }
 
 
