@@ -7,13 +7,18 @@ import Feed from './pages/Feed'
 import Profile from './pages/Profile'
 import CreatePost from './pages/CreatePost'
 import AuthGuard from './components/AuthGuard'
+import AppLayout from './components/AppLayout'
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<App />} />
+        <Route path="/" element={
+          <AppLayout>
+          <App />
+          </AppLayout>
+          } />
         <Route path="/auth" element={<Auth />} />
         <Route
           path="/feed"
