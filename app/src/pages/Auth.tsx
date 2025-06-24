@@ -2,6 +2,7 @@
 import { useState } from 'react'
 import { supabase } from '../lib/supabaseClient'
 import { useNavigate } from 'react-router-dom'
+import logoImg from '../assets/Snaply.png'
 export default function Auth() {
   const navigate = useNavigate()
   const [email, setEmail] = useState('')
@@ -36,7 +37,9 @@ export default function Auth() {
 
   return (
     <div className="max-w-md mx-auto mt-20 p-6 bg-white shadow rounded">
+      <img src = {logoImg} alt="" className='w-40' />
       <h2 className="text-xl font-bold mb-4">{isLogin ? 'Login' : 'Sign Up'}</h2>
+  
       <form onSubmit={handleSubmit} className="space-y-4">
         <input
           type="email"
