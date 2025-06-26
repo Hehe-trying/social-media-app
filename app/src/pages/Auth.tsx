@@ -36,7 +36,7 @@ export default function Auth() {
 
 
   return (
-    <div className="max-w-md mx-auto mt-20 p-6 bg-white shadow rounded">
+    <div className="mt-20 glass-button">
       <img src = {logoImg} alt="" className='w-40' />
       <h2 className="text-xl font-bold mb-4">{isLogin ? 'Login' : 'Sign Up'}</h2>
   

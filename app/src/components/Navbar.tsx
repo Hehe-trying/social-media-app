@@ -10,19 +10,19 @@ export default function Navbar() {
   }
 
   return (
-    <nav className="bg-white shadow px-4 py-2 mb-4 flex justify-between items-center">
+    <nav className="navbar flex items-center justify-between p-4 bg-white shadow-md">
       <div>
         <img src = {logoImg} alt="" className='w-20' />
       </div>
       <div className="space-x-4">
-        <button onClick={() => navigate('/feed')} className="text-blue-600 font-semibold hover:underline">Feed</button>
-        <button onClick={() => navigate('/create-post')} className="text-blue-600 font-semibold hover:underline">Create</button>
-        <button onClick={() => navigate('/profile')} className="text-blue-600 font-semibold hover:underline">Profile</button>
+        <button onClick={() => navigate('/feed')} className="text-black-600 font-semibold hover:underline">Feed</button>
+        <button onClick={() => navigate('/create-post')} className="text-black-600 font-semibold hover:underline">Create</button>
+        <button onClick={() => navigate('/profile')} className="text-black-600 font-semibold hover:underline">Profile</button>
       </div>
       
       <button
         onClick={handleLogout}
-        className="text-red-500 font-semibold hover:underline"
+        className="text-red-600 font-semibold hover:underline"
       >
         Logout
       </button>

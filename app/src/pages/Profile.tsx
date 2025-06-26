@@ -55,7 +55,8 @@ export default function Profile() {
 
   return (
     <AppLayout>
-    <div className="max-w-md mx-auto mt-10 bg-white p-6 rounded shadow">
+    <div className="glass-button
+    mt-10">
       <h2 className="text-xl font-bold mb-4">Edit Profile</h2>
       <form onSubmit={handleSubmit} className="space-y-4">
         <input

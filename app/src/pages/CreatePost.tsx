@@ -53,7 +53,7 @@ export default function CreatePost() {
 
   return (
     <AppLayout>
-    <div className="max-w-md mx-auto mt-10 bg-white p-6 rounded shadow">
+    <div className="mt-10 glass-button">
       <h2 className="text-xl font-bold mb-4">Create Post</h2>
       <form onSubmit={handleSubmit} className="space-y-4">
         <textarea
@@ -66,6 +66,7 @@ export default function CreatePost() {
         <input 
           type="file"
           accept="image/*"
+          id="image-upload"
           onChange={(e) => setImageFile(e.target.files?.[0] || null)}
           className="block w-full bg-green-500 text-white p-2 rounded mb-4 cursor-pointer hover:bg-green-600 transition-colors"
         />

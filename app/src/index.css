@@ -4,5 +4,31 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    body {
+    background: linear-gradient(135deg, #ff0080, #7928ca, #22f3d4, yellowgreen, yellow);
+    height: 100%;
+    min-height: 100vh;
+    margin: 0;
+    }
+ }
+
+.glass-button {
+  padding: 12px 24px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+}
+
+.navbar {
+  margin-top: 10px;
+  padding: 12px 24px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.3);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
